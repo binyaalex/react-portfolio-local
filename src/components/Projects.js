@@ -12,7 +12,7 @@ const Projects = () => {
 					    <Card.Title className='title'>Wordle Game</Card.Title>
 					    <Card.Text className='cardText'>
 					      Fun words game, using React and Redux.<br/>
-					    	<a href='https://hebrewordle.herokuapp.com' target='-blank'>The Game </a>
+					    	<a href='https://hebrewordle.herokuapp.com' target='-blank'>The Game</a>
 					    	<a href='https://github.com/binyaalex/DI_bootcamp/tree/main/wordle' target='-blank'>Github</a>
 					    </Card.Text>
 					  </Card.Body>
