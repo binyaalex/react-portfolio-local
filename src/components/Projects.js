@@ -3,6 +3,33 @@ import Project from './Project';
 import { Link } from "react-router-dom";
 
 const Projects = () => {
+	const projectsArr = [
+							{
+							 	title: 'Chat App',
+							 	text: 'Very easy using chat, create by React, Node.js and Socket.io.',
+								link: 'https://github.com/binyaalex/DI_bootcamp/tree/main/finalProject',
+							 },
+							 {
+							 	title: `Liar's Dice`,
+							 	text: 'Nice dice game for two players, using JavaScript.',
+							 	link: 'https://github.com/binyaalex/DI_bootcamp/tree/main/hackathon',
+							 },
+							 {
+							 	title: 'Memory Game',
+							 	text: 'Great memory game, using React and fetch api.',
+							 	link: 'https://github.com/binyaalex/DI_bootcamp/tree/main/week8/day5/memory-game',
+							 },
+							 {
+							 	title: 'Weather App',
+							 	text: 'Simple weather app, using React and Redux.',
+							 	link: 'https://github.com/binyaalex/DI_bootcamp/tree/main/week10/day2/weather',
+							 },
+							 {
+							 	title: 'IMDB',
+							 	text: 'Movies app for searching details , using React and Redux.',
+							 	link: 'https://github.com/binyaalex/DI_bootcamp/tree/main/week9/day5/movie',
+							 },
+						 ]
 	return (
 		<div className='projects'>
 			<div className='cards'>
@@ -19,7 +46,14 @@ const Projects = () => {
 					  </Card.Body>
 					</Card>
 				</a>
-				<Project link='https://github.com/binyaalex/DI_bootcamp/tree/main/finalProject' title='Chat App' text='Very easy using chat, create by React, Node.js and Socket.io.' />
+				{
+					projectsArr.map(project => {
+		              return (
+		                <Project title={project.title} text={project.text} link={project.link} key={project.link} />
+		              )
+		            })
+				}
+				{/*<Project link='https://github.com/binyaalex/DI_bootcamp/tree/main/finalProject' title='Chat App' text='Very easy using chat, create by React, Node.js and Socket.io.' />*/}
 				{/*<a className='cardWrap' href='https://github.com/binyaalex/DI_bootcamp/tree/main/finalProject' target='-blank'>
 					<Card className='card'>
 					  <Card.Img className='projectImg' variant="top" src="chat-app.jpg" />
