@@ -7,28 +7,33 @@ const Projects = () => {
 							{
 							 	title: 'Chat App',
 							 	text: 'Very easy using chat, create by React, Node.js and Socket.io.',
+								img: 'chat-app.jpg',
 								link: 'https://github.com/binyaalex/DI_bootcamp/tree/main/finalProject',
-							 },
-							 {
+							},
+							{
 							 	title: `Liar's Dice`,
 							 	text: 'Nice dice game for two players, using JavaScript.',
+								img: 'liars-dice.jpg',
 							 	link: 'https://github.com/binyaalex/DI_bootcamp/tree/main/hackathon',
-							 },
-							 {
+							},
+							{
 							 	title: 'Memory Game',
 							 	text: 'Great memory game, using React and fetch api.',
+								img: 'memory-game.jpg',
 							 	link: 'https://github.com/binyaalex/DI_bootcamp/tree/main/week8/day5/memory-game',
-							 },
-							 {
+							},
+							{
 							 	title: 'Weather App',
 							 	text: 'Simple weather app, using React and Redux.',
+								img: 'weather.jpg',
 							 	link: 'https://github.com/binyaalex/DI_bootcamp/tree/main/week10/day2/weather',
-							 },
-							 {
+							},
+							{
 							 	title: 'IMDB',
 							 	text: 'Movies app for searching details , using React and Redux.',
+								img: 'imdb.jpg',
 							 	link: 'https://github.com/binyaalex/DI_bootcamp/tree/main/week9/day5/movie',
-							 },
+						 	},
 						 ]
 	return (
 		<div className='projects'>
@@ -49,66 +54,10 @@ const Projects = () => {
 				{
 					projectsArr.map(project => {
 		              return (
-		                <Project title={project.title} text={project.text} link={project.link} key={project.link} />
+		                <Project title={project.title} text={project.text} img={project.img} link={project.link} key={project.link} />
 		              )
 		            })
 				}
-				{/*<Project link='https://github.com/binyaalex/DI_bootcamp/tree/main/finalProject' title='Chat App' text='Very easy using chat, create by React, Node.js and Socket.io.' />*/}
-				{/*<a className='cardWrap' href='https://github.com/binyaalex/DI_bootcamp/tree/main/finalProject' target='-blank'>
-					<Card className='card'>
-					  <Card.Img className='projectImg' variant="top" src="chat-app.jpg" />
-					  <Card.Body>
-					    <Card.Title className='title'>Chat App</Card.Title>
-					    <Card.Text className='cardText'>
-					      Very easy using chat, create by React, Node.js and Socket.io.
-					    </Card.Text>
-					  </Card.Body>
-					</Card>
-				</a>*/}
-				<a className='cardWrap' href='https://github.com/binyaalex/DI_bootcamp/tree/main/hackathon' target='-blank'>
-					<Card className='card'>
-					  <Card.Img className='projectImg' variant="top" src="liars-dice.jpg" />
-					  <Card.Body>
-					    <Card.Title className='title'>Liar's Dice</Card.Title>
-					    <Card.Text className='cardText'>
-					      Nice dice game for two players, using JavaScript.
-					    </Card.Text>
-					  </Card.Body>
-					</Card>
-				</a>
-				<a className='cardWrap' href='https://github.com/binyaalex/DI_bootcamp/tree/main/week8/day5/memory-game' target='-blank'>
-					<Card className='card'>
-					  <Card.Img className='projectImg' variant="top" src="memory-game.jpg" />
-					  <Card.Body>
-					    <Card.Title className='title'>Memory Game</Card.Title>
-					    <Card.Text className='cardText'>
-					      Great memory game, using React and fetch api.
-					    </Card.Text>
-					  </Card.Body>
-					</Card>
-				</a>
-				<a className='cardWrap' href='https://github.com/binyaalex/DI_bootcamp/tree/main/week10/day2/weather' target='-blank'>
-					<Card className='card'>
-					  <Card.Img className='projectImg' variant="top" src="weather.jpg" />
-					  <Card.Body>
-					    <Card.Title className='title'>Weather App</Card.Title>
-					    <Card.Text className='cardText'>
-					      Simple weather app, using React and Redux.
-					    </Card.Text>
-					  </Card.Body>
-					</Card>
-				</a>
-				<a className='cardWrap' href='https://github.com/binyaalex/DI_bootcamp/tree/main/week9/day5/movie' target='-blank'>
-					<Card className='card'>
-					  <Card.Img className='projectImg' variant="top" src="imdb.jpg" />
-					  <Card.Body>
-					    <Card.Title className='title'>IMDB</Card.Title>
-					    <Card.Text className='cardText'>
-					     Movies app for searching details , using React and Redux.
-					    </Card.Text>
-					  </Card.Body>
-					</Card>
-				</a>
 			</div>
 		</div>
 	)
