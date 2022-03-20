@@ -1,24 +1,26 @@
 import Card from 'react-bootstrap/Card';
+import Project from './Project';
 import { Link } from "react-router-dom";
 
 const Projects = () => {
 	return (
 		<div className='projects'>
 			<div className='cards'>
-				<a href='https://github.com/binyaalex/DI_bootcamp/tree/main/wordle' target='-blank'>
+				<a className='cardWrap' href='https://github.com/binyaalex/DI_bootcamp/tree/main/wordle' target='-blank'>
 					<Card className='card'>
 					  <Card.Img className='projectImg' variant="top" src="wordle.jpg" />
 					  <Card.Body>
 					    <Card.Title className='title'>Wordle Game</Card.Title>
 					    <Card.Text className='cardText'>
 					      Fun words game, using React and Redux.<br/>
-					    	<a href='https://hebrewordle.herokuapp.com' target='-blank'>The Game </a>
-					    	<a href='https://github.com/binyaalex/DI_bootcamp/tree/main/wordle' target='-blank'>Github</a>
+					    	<a href='https://hebrewordle.herokuapp.com' target='-blank' className='cardBtn'>See the Game </a>
+					    	<a href='https://github.com/binyaalex/DI_bootcamp/tree/main/wordle' target='-blank' className='cardBtn'>Github</a>
 					    </Card.Text>
 					  </Card.Body>
 					</Card>
 				</a>
-				<a href='https://github.com/binyaalex/DI_bootcamp/tree/main/finalProject' target='-blank'>
+				<Project link='https://github.com/binyaalex/DI_bootcamp/tree/main/finalProject' title='Chat App' text='Very easy using chat, create by React, Node.js and Socket.io.' />
+				{/*<a className='cardWrap' href='https://github.com/binyaalex/DI_bootcamp/tree/main/finalProject' target='-blank'>
 					<Card className='card'>
 					  <Card.Img className='projectImg' variant="top" src="chat-app.jpg" />
 					  <Card.Body>
@@ -28,8 +30,8 @@ const Projects = () => {
 					    </Card.Text>
 					  </Card.Body>
 					</Card>
-				</a>
-				<a href='https://github.com/binyaalex/DI_bootcamp/tree/main/hackathon' target='-blank'>
+				</a>*/}
+				<a className='cardWrap' href='https://github.com/binyaalex/DI_bootcamp/tree/main/hackathon' target='-blank'>
 					<Card className='card'>
 					  <Card.Img className='projectImg' variant="top" src="liars-dice.jpg" />
 					  <Card.Body>
@@ -40,7 +42,7 @@ const Projects = () => {
 					  </Card.Body>
 					</Card>
 				</a>
-				<a href='https://github.com/binyaalex/DI_bootcamp/tree/main/week8/day5/memory-game' target='-blank'>
+				<a className='cardWrap' href='https://github.com/binyaalex/DI_bootcamp/tree/main/week8/day5/memory-game' target='-blank'>
 					<Card className='card'>
 					  <Card.Img className='projectImg' variant="top" src="memory-game.jpg" />
 					  <Card.Body>
@@ -51,7 +53,7 @@ const Projects = () => {
 					  </Card.Body>
 					</Card>
 				</a>
-				<a href='https://github.com/binyaalex/DI_bootcamp/tree/main/week10/day2/weather' target='-blank'>
+				<a className='cardWrap' href='https://github.com/binyaalex/DI_bootcamp/tree/main/week10/day2/weather' target='-blank'>
 					<Card className='card'>
 					  <Card.Img className='projectImg' variant="top" src="weather.jpg" />
 					  <Card.Body>
@@ -62,7 +64,7 @@ const Projects = () => {
 					  </Card.Body>
 					</Card>
 				</a>
-				<a href='https://github.com/binyaalex/DI_bootcamp/tree/main/week9/day5/movie' target='-blank'>
+				<a className='cardWrap' href='https://github.com/binyaalex/DI_bootcamp/tree/main/week9/day5/movie' target='-blank'>
 					<Card className='card'>
 					  <Card.Img className='projectImg' variant="top" src="imdb.jpg" />
 					  <Card.Body>

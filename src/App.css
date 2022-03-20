@@ -51,9 +51,10 @@ body {
 .all {
   background-color: #fff;
   height: 80%;
-  width: 80%;
-  border-radius: 35px;
-  padding: 10px 30px;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 3px;
+  padding: 20px 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -61,22 +62,46 @@ body {
 
 nav {
   display: flex;
-  padding: 10px 15px;
+  padding: 10px 0;
   color: #6B4DE9;
 }
 
 nav > * {
-  padding: 5px 10px;
-  border-radius: 7px;
-}
-
-nav > *:hover {
-  background-color: rgb(243, 234, 255);
+  padding-right: 15px;
 }
 
 a:link {
   text-decoration: none;
 }
+
+nav a{
+  position: relative;
+  padding-bottom: 5px;
+  color:#6B4DE9;
+  font-size: 15px;
+}
+nav a:hover{
+  color:#6B4DE9;
+}
+nav a:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background:#6B4DE9;
+  transition: all .3s;
+  transform: scale(0, 1);
+  transform-origin: left bottom;
+}
+nav a::after {
+  transform: scale(0, 1);
+}
+nav a:hover::after {
+  transform: scale(1, 1);
+}
+
 
 a:visited {
   text-decoration: none;
@@ -86,34 +111,44 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80%;
-  padding: 0 15px;
 }
 
 .about {
-  padding-right: 30px;
   text-align: left;
-  min-width: 275px;
-  max-width: 390px;
+  width: 50%;
 }
 
 .homeHeader {
+  margin: 0;
   color: #6B4DE9;
+  font-size: 48px;
+  line-height: 1;
 }
-
+.homeSubHeader{
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #6B4DE9;
+  font-weight: bold;
+}
+.homeTxt{
+  margin: 40px 0 25px;
+  font-size: 14px;
+  line-height: 1.2;
+}
 .projectsBtn {
-  background-color: #6B4DE9;
-  border: 0;
-  border-radius: 25px;
-  padding: 10px 20px;
-  color: white;
+  display: inline-block;
+  color: #6B4DE9;
+  font-size: 14px;
+  border: 1px solid #6B4DE9;
+  border-radius: 3px;
+  padding: 5px 15px;
 }
 
 .profileImg {
-  border: 20px solid #6B4DE9;
-  border-radius: 130px;
-  height: 220px;
-  width: 220px;
+  border-radius: 50%;
+  height: 380px;
+  width: 380px;
 }
 
 /*.contacts {
@@ -123,47 +158,67 @@ a:visited {
 }*/
 
 .contacts > * {
-  margin: 0 10px;
+  margin: 0 5px;
   color: #6B4DE9;
 }
-
+.projects{
+  margin: 20px 0;
+  height: 80%;
+  overflow-y: scroll;
+}
 .cards {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
-  overflow-y: scroll;
-  height: 90%;
+  justify-content: space-between;
+
 }
 
 .cards::-webkit-scrollbar {
     width: 0;
 }
-
+.cardWrap{
+  display: inline-block;
+  width: 30%;
+  border: 1px solid #d3d2d2;
+  border-radius: 3px;
+  margin-bottom: 40px;
+}
 .card {
-  width: 180px;
-  background-color: #F4F4F4;
-  border: 9px solid #6B4DE9;
-  border-radius: 10px;
-  margin: 5px;
-  height: 203px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   text-align: left;
+  overflow: hidden;
 }
 
 .projectImg {
-  height: 100px;
-  width: 180px;
+  height: 155px;
+  width: auto;
+  border-bottom: 1px solid #d3d2d2;
 }
 
 .card-body {
-  padding: 0 7px;
+  padding: 10px;
 }
 
 .title {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: bold;
   color: #6B4DE9;
 }
 
 .cardText {
   margin: 5px 0;
   color: black;
+}
+.cardBtn{
+  display: inline-block;
+  color: #6B4DE9;
+  font-size: 14px;
+  border: 1px solid #6B4DE9;
+  border-radius: 3px;
+  padding: 3px 10px;
+  margin-top: 10px;
+  margin-right: 5px;
 }
