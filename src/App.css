@@ -226,6 +226,10 @@ a:visited {
 
 @media all and (max-width: 900px) {
 
+  .all {
+    height: 90%;
+  }
+
   .home {
     flex-direction: column-reverse;
   }
@@ -237,6 +241,7 @@ a:visited {
 
   .homeHeader {
     font-size: 30px;
+    padding-top: 12px;
   }
 
   .homeTxt {
@@ -253,7 +258,11 @@ a:visited {
   }
 
   @media all and (min-width: 650px) {
-  
+    
+    .all {
+      height: 85%;
+    }
+    
     .profileImg {
       height: 280px;
       width: 280px;
