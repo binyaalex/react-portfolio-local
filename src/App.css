@@ -227,7 +227,7 @@ a:visited {
 @media all and (max-width: 900px) {
 
   .all {
-    height: 90%;
+    height: 95%;
   }
 
   .home {
@@ -257,20 +257,48 @@ a:visited {
     font-size: 14px;
   }
 
+  .cards {
+    justify-content: center;
+  }
+
+  .all {
+    padding: 5px 15px;
+  }
+
+  .cardWrap {
+    width: 65%;
+  }
+
+  @media all and (max-width: 500px) {
+    .cardWrap {
+      width: 80%;
+    }
+  }
+
+  @media all and (max-width: 400px) {
+    .cardWrap {
+      width: 90%;
+    }
+  }
+
   @media all and (min-width: 650px) {
     
     .all {
-      height: 85%;
+      height: 90%;
     }
 
     .profileImg {
       height: 280px;
       width: 280px;
     }
-  }
 
-  .cards {
-    justify-content: center;
+    .cards {
+      justify-content: space-between;
+    }
+
+    .cardWrap {
+      width: 48%;
+    }
   }
 }
 
