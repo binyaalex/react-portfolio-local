@@ -10,7 +10,7 @@ const Home = () => {
 				<Link to="/projects" className='projectsBtn'>See My Projects</Link>
 			</div>
 			<div className='imgDiv'>
-				<img className='profileImg' src='profile-photo.jpg' alt='my-photo' />
+				<img className='profileImg' src='profileImg2.jpg' alt='my-photo' />
 			</div>
 		</div>
 	)
