@@ -262,11 +262,15 @@ a:visited {
     .all {
       height: 85%;
     }
-    
+
     .profileImg {
       height: 280px;
       width: 280px;
     }
+  }
+
+  .cards {
+    justify-content: center;
   }
 }
 
